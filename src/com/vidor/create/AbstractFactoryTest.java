@@ -8,12 +8,13 @@ public class AbstractFactoryTest {
     }
 }
 
-interface IabstractFactory{
+interface IabstractFactory {
     IProduct createProductA();
+
     IProduct createProductB();
 }
 
-class AbstractFactory implements IabstractFactory{
+class AbstractFactory implements IabstractFactory {
 
     @Override
     public IProduct createProductA() {

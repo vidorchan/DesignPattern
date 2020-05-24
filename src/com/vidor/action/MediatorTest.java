@@ -19,6 +19,7 @@ public class MediatorTest {
 //抽象中介者
 abstract class Mediator {
     abstract void register(Colleague colleague);
+
     abstract void relay(Colleague cl); //转发
 }
 

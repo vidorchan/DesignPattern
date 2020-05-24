@@ -7,11 +7,11 @@ public class FactoryTest {
     }
 }
 
-interface IFactory{
+interface IFactory {
     IProduct createProduct();
 }
 
-class FactoryA implements IFactory{
+class FactoryA implements IFactory {
 
     @Override
     public IProduct createProduct() {
@@ -19,7 +19,7 @@ class FactoryA implements IFactory{
     }
 }
 
-class FactoryB implements IFactory{
+class FactoryB implements IFactory {
 
     @Override
     public IProduct createProduct() {

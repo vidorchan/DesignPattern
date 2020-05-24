@@ -12,6 +12,7 @@ public class BuilderTest {
 //指挥者：调用完成复杂对象构建
 class Director {
     private AbstractBuilder builder;
+
     public Director(AbstractBuilder builder) {
         this.builder = builder;
     }
@@ -84,17 +85,27 @@ class AbstractBuilderImpl extends AbstractBuilder {
 }
 
 //抽象建造者
-abstract class AbstractBuilder{
+abstract class AbstractBuilder {
     abstract void buildCpu();
+
     abstract void buildMemory();
+
     abstract void buildScreen();
+
     abstract void buildMouse();
+
     abstract void buildPower();
+
     abstract void buildKeyboard();
+
     abstract void buildHost();
+
     abstract void buildRam();
+
     abstract void buildRom();
+
     abstract void buildGpu();
+
     abstract Computer getComputer();
 }
 

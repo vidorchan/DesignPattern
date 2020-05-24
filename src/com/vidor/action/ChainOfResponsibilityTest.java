@@ -25,6 +25,7 @@ abstract class Leader {
     public void setNext(Leader next) {
         this.next = next;
     }
+
     //处理请求的方法
     public abstract void handleRequest(int LeaveDays);
 }
@@ -34,7 +35,7 @@ class ClassAdviser extends Leader {
 
     @Override
     public void handleRequest(int LeaveDays) {
-        if (LeaveDays<=2) {
+        if (LeaveDays <= 2) {
             System.out.println("班主任批准您请假" + LeaveDays + "天。");
         } else {
             if (getNext() != null) {

@@ -7,7 +7,7 @@ public class SimpleFactoryTest {
     }
 }
 
-class SimpleFactory{
+class SimpleFactory {
 
     public IProduct createProduct(String type) {
         if ("A".equals(type)) {
@@ -23,7 +23,7 @@ interface IProduct {
     void createProduct();
 }
 
-class ProductA implements IProduct{
+class ProductA implements IProduct {
 
     @Override
     public void createProduct() {
@@ -31,7 +31,7 @@ class ProductA implements IProduct{
     }
 }
 
-class ProductB implements IProduct{
+class ProductB implements IProduct {
     @Override
     public void createProduct() {
         System.out.println("Create a B Product...");
