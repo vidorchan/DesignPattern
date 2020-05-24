@@ -20,26 +20,22 @@ class Facade {
 }
 
 //子系统角色
-class SubSystem01
-{
-    public  void method1()
-    {
+class SubSystem01 {
+    public void method1() {
         System.out.println("子系统01的method1()被调用！");
     }
 }
+
 //子系统角色
-class SubSystem02
-{
-    public  void method2()
-    {
+class SubSystem02 {
+    public void method2() {
         System.out.println("子系统02的method2()被调用！");
     }
 }
+
 //子系统角色
-class SubSystem03
-{
-    public  void method3()
-    {
+class SubSystem03 {
+    public void method3() {
         System.out.println("子系统03的method3()被调用！");
     }
 }

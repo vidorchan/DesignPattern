@@ -14,6 +14,7 @@ public class FlyWeightFactoryTest {
 
 class FlyWeightFactory {
     private HashMap<String, FlyWeight> flyWeightHashMap = new HashMap<>();
+
     public FlyWeight getFlyWeight(String key) {
         FlyWeight flyWeight = flyWeightHashMap.get(key);
         if (flyWeight == null) {
@@ -46,7 +47,7 @@ interface FlyWeight {
     public void operation(UnsharedConcreteFlyweight state);
 }
 
-class UnsharedConcreteFlyweight  {
+class UnsharedConcreteFlyweight {
     private String info;
 
     public UnsharedConcreteFlyweight(String info) {

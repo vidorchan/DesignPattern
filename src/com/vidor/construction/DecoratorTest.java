@@ -13,7 +13,7 @@ interface Component {
 }
 
 //具体构件角色
-class ConcreteComponent implements Component{
+class ConcreteComponent implements Component {
 
     @Override
     public void operation() {
